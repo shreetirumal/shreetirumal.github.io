@@ -1,19 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-	    <h2> This is Shree, Virtualization Engineer 
-</h2>
-	    <h6><a href="https://www.linkedin.com/in/shreetirumal/">View my LinkedIn Profile</a> </h6>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Digital Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #e0f7fa);
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #1a237e;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .experience-item {
+      background: #fff;
+      border-left: 6px solid #1a237e;
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .experience-item h3 {
+      margin: 0 0 0.5rem;
+      color: #1a237e;
+    }
+    .experience-item p {
+      margin: 0.3rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 1rem;
+      text-align: left;
+    }
+    th {
+      background: #1a237e;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f3f6ff;
+    }
+    .level {
+      font-weight: bold;
+      padding: 0.4em 0.8em;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    .level-1 { background: #ffcdd2; color: #c62828; }
+    .level-2 { background: #ffe082; color: #ff6f00; }
+    .level-3 { background: #c5e1a5; color: #558b2f; }
+    .level-4 { background: #b2dfdb; color: #00695c; }
+  </style>
+</head>
+<body>
+
+  <h1>My Digital Resume</h1>
+
+  <!-- ===== Experience Section ===== -->
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="experience-item">
+      <h3>Citrix Infrastructure Engineer</h3>
+      <p><strong>Company:</strong> ABC Technologies</p>
+      <p><strong>Years:</strong> 2021 – Present</p>
+      <p><strong>Summary:</strong> Managing Citrix environments, automating Studio and Delivery Controller tasks with PowerShell, and maintaining non-persistent desktop pools.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>System Administrator</h3>
+      <p><strong>Company:</strong> XYZ Corp</p>
+      <p><strong>Years:</strong> 2018 – 2021</p>
+      <p><strong>Summary:</strong> Oversaw Windows Server operations, Active Directory management, and user support across the organization.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>IT Support Technician</h3>
+      <p><strong>Company:</strong> SupportNet</p>
+      <p><strong>Years:</strong> 2016 – 2018</p>
+      <p><strong>Summary:</strong> Delivered frontline support and troubleshooting, assisting end-users with hardware, software, and login issues.</p>
+    </div>
+  </section>
+
+  <!-- ===== Skill Matrix Section ===== -->
+  <section>
+    <h2>Skill Matrix</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Current Level</th>
+          <th>Notes / Plan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PowerShell Scripting</td>
+          <td><span class="level level-3">Advanced</span></td>
+          <td>Automate more with modules and REST APIs</td>
+        </tr>
+        <tr>
+          <td>Citrix Studio / DDC Mgmt</td>
+          <td><span class="level level-3">Advanced</span></td>
+          <td>Master FMA internals and automation</td>
+        </tr>
+        <tr>
+          <td>Citrix PVS / MCS</td>
+          <td><span class="level level-2">Intermediate</span></td>
+          <td>Review image lifecycle, optimize templates</td>
+        </tr>
+        <tr>
+          <td>Azure AD / Entra ID</td>
+          <td><span class="level level-2">Intermediate</span></td>
+          <td>Explore Conditional Access and identity governance</td>
+        </tr>
+        <tr>
+          <td>VMware / Hypervisor Mgmt</td>
+          <td><span class="level level-2">Intermediate</span></td>
+          <td>Hands-on with VM templates and vCenter tasks</td>
+        </tr>
+        <tr>
+          <td>Scripting with APIs</td>
+          <td><span class="level level-2">Intermediate</span></td>
+          <td>Practice Citrix and Azure API integrations</td>
+        </tr>
+        <tr>
+          <td>Monitoring / Logging (e.g. Director)</td>
+          <td><span class="level level-2">Intermediate</span></td>
+          <td>Enhance troubleshooting & alert workflows</td>
+        </tr>
+        <tr>
+          <td>IT Automation Tools (Ansible, Terraform)</td>
+          <td><span class="level level-1">Novice</span></td>
+          <td>Learn basic provisioning tasks</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== Certifications Section ===== -->
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li><strong>Citrix Certified Associate - Virtualization (CCA-V)</strong></li>
+      <li><strong>Citrix Certified Professional - Virtualization (CCP-V)</strong></li>
+      <li><strong>Azure Solutions Architect Expert</strong></li>
+      <li><strong>GitHub Foundation Certification</strong></li>
+      <li><strong>VMware Certified Professional (VCP)</strong></li>
+    </ul>
+  </section>
+
+  <!-- Optional LinkedIn Section -->
+  <!-- Uncomment and replace your-username if you want to add this -->
+  <!--
+  <section>
+    <h2>Connect with Me</h2>
+    <div style="text-align: center;">
+      <div class="LI-profile-badge"  
+           data-version="v1"  
+           data-size="medium"  
+           data-locale="en_US"  
+           data-type="horizontal"  
+           data-theme="light"  
+           data-vanity="your-username">
+        <a class="LI-simple-link" href="https://www.linkedin.com/in/your-username/">Your Name</a>
+      </div>
+    </div>
+    <script type="text/javascript" 
+            src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  </section>
+  -->
+
+</body>
 </html>
